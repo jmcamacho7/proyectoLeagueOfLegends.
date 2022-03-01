@@ -9,14 +9,13 @@ import java.util.List;
 import java.util.Map;
 
 public class UtilidadesPersonaje {
-
     public Personaje levelUp(Personaje personaje){
         if (personaje.getNivel()<18){
             personaje.setNivel(personaje.getNivel()+1);
-            personaje.setAtaqueBase(personaje.getAtaqueBase() + personaje.getEscalabilidad().getIncrementoDanioNivel() * personaje.getNivel());
-            personaje.setDefensaBase(personaje.getDefensaBase() + personaje.getEscalabilidad().getIncrementoDefensaNivel() * personaje.getNivel());
-            personaje.setManaBase(personaje.getManaBase() + personaje.getEscalabilidad().getIncrementoManaNivel() * personaje.getNivel());
-            personaje.setVidaBase(personaje.getVidaBase() + personaje.getEscalabilidad().getIncrementoSaludNivel() * personaje.getNivel());
+            personaje.setAtaque(personaje.getAtaqueBase() + personaje.getEscalabilidad().getIncrementoDanioNivel() * personaje.getNivel());
+            personaje.setDefensa(personaje.getDefensaBase() + personaje.getEscalabilidad().getIncrementoDefensaNivel() * personaje.getNivel());
+            personaje.setMana(personaje.getManaBase() + personaje.getEscalabilidad().getIncrementoManaNivel() * personaje.getNivel());
+            personaje.setVida(personaje.getVidaBase() + personaje.getEscalabilidad().getIncrementoSaludNivel() * personaje.getNivel());
         }
 
         return personaje;
@@ -89,15 +88,31 @@ public class UtilidadesPersonaje {
 
     }
 
-    public Personaje getMasPoderoso(List<Personaje> personajes){
-        List<Personaje> campeones = new ArrayList<>();
+    public Personaje getMasPoderoso(List<Personaje> personaje){
+        Personaje campeon = new Personaje();
 
-        for (Personaje x : personajes){
+        for (Personaje x : personaje){
+            while (x.getNivel()>18){
+                x = levelUp(x);
+            }
 
-            campeones.add(x);
+            if (x.getNivel()==null){
+                campeon = x;
+            }
+
+            if (campeon.getAtaque()+ campeon.getDefensa()+campeon.getMana()+campeon.getVida() > x.getAtaque()+x.getDefensa()+x.getMana()+x.getVida()){
+                campeon = x;
+            }
         }
-
+        return campeon;
     }
 
+    public Map<Region, Personaje> getMasPoderosoPorRegion(List<Personaje> personajes){
+        Map<Region, Personaje> lista2 = new HashMap<>();
+        getPersonajesPorRegion() = new Map<Region, List<Personaje>>() {
+        }
+        for (Personaje x : getPersonajesPorRegion(lista)){
 
+        }
+    }
 }
