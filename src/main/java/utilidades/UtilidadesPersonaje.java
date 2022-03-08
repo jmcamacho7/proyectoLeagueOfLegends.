@@ -109,10 +109,8 @@ public class UtilidadesPersonaje {
 
     public Map<Region, Personaje> getMasPoderosoPorRegion(List<Personaje> personajes){
         Map<Region, Personaje> lista2 = new HashMap<>();
-        getPersonajesPorRegion() = new Map<Region, List<Personaje>>() {
-        }
-        for (Personaje x : getPersonajesPorRegion(lista)){
+        Map<List<Personaje>>
+        getMasPoderoso(personajes);
 
-        }
     }
 }
