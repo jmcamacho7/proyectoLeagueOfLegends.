@@ -108,9 +108,19 @@ public class UtilidadesPersonaje {
     }
 
     public Map<Region, Personaje> getMasPoderosoPorRegion(List<Personaje> personajes){
-        Map<Region, Personaje> lista2 = new HashMap<>();
-        Map<List<Personaje>>
-        getMasPoderoso(personajes);
+        Map<Region, List<Personaje>> lista2 = getPersonajesPorRegion(personajes);
+        Map<Region, Personaje> mapa = new HashMap<>();
 
+        mapa.put(Region.DEMACIA, getMasPoderoso(lista2.get(Region.DEMACIA)));
+        mapa.put(Region.NOXUS, getMasPoderoso(lista2.get(Region.NOXUS)));
+        mapa.put(Region.SHURIMA, getMasPoderoso(lista2.get(Region.SHURIMA)));
+        mapa.put(Region.TARGON, getMasPoderoso(lista2.get(Region.TARGON)));
+        mapa.put(Region.FREIJORD, getMasPoderoso(lista2.get(Region.FREIJORD)));
+        mapa.put(Region.PILTOVER, getMasPoderoso(lista2.get(Region.PILTOVER)));
+        mapa.put(Region.ZAUM, getMasPoderoso(lista2.get(Region.ZAUM)));
+        mapa.put(Region.AGUAS_ESTANCADAS, getMasPoderoso(lista2.get(Region.AGUAS_ESTANCADAS)));
+        mapa.put(Region.DESCONOCIDA, getMasPoderoso(lista2.get(Region.DESCONOCIDA)));
+
+        return mapa;
     }
 }
