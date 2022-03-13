@@ -5,10 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e230582f-9c86-44f2-b42d-6e8e582fb529" name="Changes" comment="Modelos acabados">
-      <change afterPath="$PROJECT_DIR$/src/main/java/modelos/Jugador.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/modelos/Partida.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/utilidades/UtilidadesPartida.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/utilidades/IUtilidadesPartida.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/utilidades/UtilidadesPartida.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utilidades/UtilidadesPartida.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,6 +18,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -51,6 +51,9 @@
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -70,7 +73,7 @@
       <workItem from="1646417609423" duration="2019000" />
       <workItem from="1646755007204" duration="262000" />
       <workItem from="1646938097329" duration="2895000" />
-      <workItem from="1647175439324" duration="16053000" />
+      <workItem from="1647175439324" duration="22116000" />
     </task>
     <task id="LOCAL-00001" summary="Primeros metodos realizados">
       <created>1645559230255</created>
@@ -121,7 +124,14 @@
       <option name="project" value="LOCAL" />
       <updated>1647192164854</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Modelos acabados">
+      <created>1647194668660</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1647194668660</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
