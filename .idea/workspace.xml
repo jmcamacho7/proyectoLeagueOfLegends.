@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e230582f-9c86-44f2-b42d-6e8e582fb529" name="Changes" comment="ficheros introducidos">
+    <list default="true" id="e230582f-9c86-44f2-b42d-6e8e582fb529" name="Changes" comment="V5 ACABADO">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/utilidades/UtilidadesFichero.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utilidades/UtilidadesFichero.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/utilidades/UtilidadesPersonaje.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utilidades/UtilidadesPersonaje.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,7 +69,7 @@
       <workItem from="1646417609423" duration="2019000" />
       <workItem from="1646755007204" duration="262000" />
       <workItem from="1646938097329" duration="2895000" />
-      <workItem from="1647175439324" duration="2114000" />
+      <workItem from="1647175439324" duration="5063000" />
     </task>
     <task id="LOCAL-00001" summary="Primeros metodos realizados">
       <created>1645559230255</created>
@@ -99,7 +99,14 @@
       <option name="project" value="LOCAL" />
       <updated>1646938502576</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="V5 ACABADO">
+      <created>1647177598760</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1647177598760</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -120,6 +127,7 @@
     <MESSAGE value="Primeros metodos realizados" />
     <MESSAGE value="V6 casi acabado" />
     <MESSAGE value="ficheros introducidos" />
-    <option name="LAST_COMMIT_MESSAGE" value="ficheros introducidos" />
+    <MESSAGE value="V5 ACABADO" />
+    <option name="LAST_COMMIT_MESSAGE" value="V5 ACABADO" />
   </component>
 </project>
