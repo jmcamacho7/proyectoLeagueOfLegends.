@@ -8,7 +8,13 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+
+
 public class UtilidadesPersonaje {
+
+    public UtilidadesPersonaje() {
+    }
+
     public Personaje levelUp(Personaje personaje){
         if (personaje.getNivel()<18){
             personaje.setNivel(personaje.getNivel()+1);
