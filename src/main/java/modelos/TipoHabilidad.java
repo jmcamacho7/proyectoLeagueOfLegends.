@@ -1,7 +1,7 @@
 package modelos;
 
 public enum TipoHabilidad{
-    DANIO,
+    DAÑO,
     CURACION,
     BUFO_VIDA,
     BUFO_DEFENSA,

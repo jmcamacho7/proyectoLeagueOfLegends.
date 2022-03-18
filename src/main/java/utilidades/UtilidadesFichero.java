@@ -31,7 +31,7 @@ public class UtilidadesFichero {
         CSVReader reader = null;
 
         try {
-            reader = new CSVReader(new FileReader("C:\\Users\\hakue\\IdeaProjects\\proyectoLeagueOfLegends\\src\\main\\java\\documentos"),SEPARATOR,QUOTE);
+            reader = new CSVReader(new FileReader("C:\\Users\\hakue\\IdeaProjects\\proyectoLeagueOfLegends\\src\\main\\java\\documentos\\personajes.csv"),SEPARATOR,QUOTE);
             String[] nextLine= null ;
             int count = 0;
 
@@ -62,7 +62,7 @@ public class UtilidadesFichero {
         return campeon;
     }
 
-    public List<Personaje> leerYAprenderHabilidades() throws IOException {
+    public static List<Personaje> leerYAprenderHabilidades() throws IOException {
         List<Personaje> campeon = leerPersonajes() ;
         List<Habilidad>  skill = new ArrayList<>();
         Map<Personaje, List<Habilidad>> mapa = new HashMap<>();
@@ -104,7 +104,7 @@ public class UtilidadesFichero {
     }
 
 
-    public List<Item> leerItems() throws IOException{
+    public static List<Item> leerItems() throws IOException{
 
         List<Item> objeto = new ArrayList<>();
         CSVReader reader = null;
@@ -139,40 +139,5 @@ public class UtilidadesFichero {
         return objeto;
     }
 
-    public void golpearConHabilidad(Personaje emisor, Personaje receptor, Habilidad habilidadEmisor){
-        UtilidadesPersonaje nivel = new UtilidadesPersonaje();
-
-        while (emisor.getNivel()>18){
-            emisor = nivel.levelUp(emisor);
-        }
-        while (receptor.getNivel()>18){
-            receptor = nivel.levelUp(receptor);
-        }
-
-
-        if (emisor.getEquipamiento().isEmpty() == false){
-            for (Item x : emisor.getEquipamiento()){
-                emisor.setAtaque(emisor.getAtaque() + x.getAumentoDanio());
-                emisor.setDefensa(emisor.getDefensa() + x.getAumentoDefensa());
-                emisor.setMana(emisor.getMana() + x.getAumentoMana());
-                emisor.setVida(emisor.getVida() + x.getAumentoSalud());
-            }
-        }
-
-        if (receptor.getEquipamiento().isEmpty() == false){
-            for (Item x : emisor.getEquipamiento()){
-                receptor.setAtaque(receptor.getAtaque() + x.getAumentoDanio());
-                receptor.setDefensa(receptor.getDefensa() + x.getAumentoDefensa());
-                receptor.setMana(receptor.getMana() + x.getAumentoMana());
-                receptor.setVida(receptor.getVida() + x.getAumentoSalud());
-            }
-        }
-
-        double daniototal;
-        daniototal = habilidadEmisor.getDanioBase() + (0.2 * emisor.getAtaque()) - (0.1 * receptor.getDefensa());
-
-        emisor.setMana(emisor.getMana() - habilidadEmisor.getCosteMana());
-        receptor.setVida(receptor.getVida() - daniototal);
-    }
 }
 

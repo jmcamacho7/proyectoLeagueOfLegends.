@@ -10,7 +10,7 @@ import java.util.*;
 
 public class UtilidadesPartida {
 
-    private void inicializarPartida(Partida partida, List<Jugador> participantes, List<Personaje> personajesDisponibles){
+    public static void inicializarPartida(Partida partida, List<Jugador> participantes, List<Personaje> personajesDisponibles){
         Map<Jugador, Personaje> elecciones = new HashMap<>();
         List<Jugador> primerequipo = new ArrayList<>();
         for (Jugador x: participantes){
@@ -44,7 +44,7 @@ public class UtilidadesPartida {
         partida.setInicioPartida(LocalDateTime.now());
     }
 
-    private void finalizarPartida(Partida partida, Integer equipoVencedor){
+    public static void finalizarPartida(Partida partida, Integer equipoVencedor){
         partida.setFinPartida(LocalDateTime.now());
         partida.setEquipoVencedor(equipoVencedor);
 

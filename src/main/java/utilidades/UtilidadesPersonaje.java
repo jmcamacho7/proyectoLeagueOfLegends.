@@ -15,19 +15,19 @@ public class UtilidadesPersonaje {
     public UtilidadesPersonaje() {
     }
 
-    public Personaje levelUp(Personaje personaje){
+    public static Personaje levelUp(Personaje personaje){
         if (personaje.getNivel()<18){
             personaje.setNivel(personaje.getNivel()+1);
-            personaje.setAtaque(personaje.getAtaqueBase() + personaje.getEscalabilidad().getIncrementoDanioNivel() * personaje.getNivel());
-            personaje.setDefensa(personaje.getDefensaBase() + personaje.getEscalabilidad().getIncrementoDefensaNivel() * personaje.getNivel());
-            personaje.setMana(personaje.getManaBase() + personaje.getEscalabilidad().getIncrementoManaNivel() * personaje.getNivel());
-            personaje.setVida(personaje.getVidaBase() + personaje.getEscalabilidad().getIncrementoSaludNivel() * personaje.getNivel());
+            personaje.setAtaque(personaje.getAtaque() + personaje.getEscalabilidad().getIncrementoDanioNivel() * personaje.getNivel());
+            personaje.setDefensa(personaje.getDefensa() + personaje.getEscalabilidad().getIncrementoDefensaNivel() * personaje.getNivel());
+            personaje.setMana(personaje.getMana() + personaje.getEscalabilidad().getIncrementoManaNivel() * personaje.getNivel());
+            personaje.setVida(personaje.getVida() + personaje.getEscalabilidad().getIncrementoSaludNivel() * personaje.getNivel());
         }
 
         return personaje;
     }
 
-    public Map<Region, List<Personaje>> getPersonajesPorRegion(List<Personaje> personajes){
+    public static Map<Region, List<Personaje>> getPersonajesPorRegion(List<Personaje> personajes){
         Map<Region, List<Personaje>> lista = new HashMap<>();
 
         List<Personaje> Demaciano = new ArrayList<>();
@@ -64,7 +64,7 @@ public class UtilidadesPersonaje {
             if (x.getRegion2() == Region.PILTOVER){
                 Piltillo.add(x);
             }
-            if (x.getRegion2() == Region.ZAUM){
+            if (x.getRegion2() == Region.ZAUN){
                 Zaunita.add(x);
             }
             if (x.getRegion2() == Region.BANDLE){
@@ -78,42 +78,73 @@ public class UtilidadesPersonaje {
             }
         }
 
-        lista.put(Region.DEMACIA, Demaciano);
-        lista.put(Region.NOXUS, Noxiano);
-        lista.put(Region.JONIA, Jonio);
-        lista.put(Region.SHURIMA, Shurimanos);
-        lista.put(Region.TARGON, Targoniano);
-        lista.put(Region.FREIJORD, Freijordiano);
-        lista.put(Region.PILTOVER, Piltillo);
-        lista.put(Region.ZAUM, Zaunita);
-        lista.put(Region.BANDLE, Bandle);
-        lista.put(Region.AGUAS_ESTANCADAS,AguasEstancadas);
-        lista.put(Region.DESCONOCIDA, Desconocido);
+        if (Demaciano.isEmpty() == false){
+            lista.put(Region.DEMACIA, Demaciano);
+        }
+
+        if (Noxiano.isEmpty() == false){
+            lista.put(Region.NOXUS, Noxiano);
+        }
+
+        if (Shurimanos.isEmpty() == false){
+            lista.put(Region.SHURIMA, Shurimanos);
+        }
+
+        if (Targoniano.isEmpty() == false){
+            lista.put(Region.TARGON, Targoniano);
+        }
+
+        if (Freijordiano.isEmpty() == false){
+            lista.put(Region.FREIJORD, Freijordiano);
+        }
+
+        if (Piltillo.isEmpty() == false){
+            lista.put(Region.PILTOVER, Piltillo);
+        }
+
+        if (Zaunita.isEmpty() == false){
+            lista.put(Region.ZAUN, Zaunita);
+        }
+
+        if (Bandle.isEmpty() == false){
+            lista.put(Region.BANDLE, Bandle);
+        }
+
+        if (AguasEstancadas.isEmpty() == false){
+            lista.put(Region.AGUAS_ESTANCADAS,AguasEstancadas);
+        }
+
+        if (Desconocido.isEmpty() == false){
+            lista.put(Region.DESCONOCIDA, Desconocido);
+        }
 
         return lista;
 
     }
 
-    public Personaje getMasPoderoso(List<Personaje> personaje){
+    public static Personaje getMasPoderoso(List<Personaje> personaje){
         Personaje campeon = new Personaje();
 
         for (Personaje x : personaje){
-            while (x.getNivel()>18){
+            while (x.getNivel()<18){
                 x = levelUp(x);
             }
 
-            if (x.getNivel()==null){
+            if (campeon.getNombre()==null){
                 campeon = x;
             }
 
-            if (campeon.getAtaque()+ campeon.getDefensa()+campeon.getMana()+campeon.getVida() > x.getAtaque()+x.getDefensa()+x.getMana()+x.getVida()){
+            double stats1 = campeon.getAtaque()+ campeon.getDefensa()+campeon.getMana()+campeon.getVida();
+            double stats2 = x.getAtaque()+x.getDefensa()+x.getMana()+x.getVida();
+
+            if (stats2 > stats1){
                 campeon = x;
             }
         }
         return campeon;
     }
 
-    public Map<Region, Personaje> getMasPoderosoPorRegion(List<Personaje> personajes){
+    public static Map<Region, Personaje> getMasPoderosoPorRegion(List<Personaje> personajes){
         Map<Region, List<Personaje>> lista2 = getPersonajesPorRegion(personajes);
         Map<Region, Personaje> mapa = new HashMap<>();
 
@@ -123,7 +154,7 @@ public class UtilidadesPersonaje {
         mapa.put(Region.TARGON, getMasPoderoso(lista2.get(Region.TARGON)));
         mapa.put(Region.FREIJORD, getMasPoderoso(lista2.get(Region.FREIJORD)));
         mapa.put(Region.PILTOVER, getMasPoderoso(lista2.get(Region.PILTOVER)));
-        mapa.put(Region.ZAUM, getMasPoderoso(lista2.get(Region.ZAUM)));
+        mapa.put(Region.ZAUN, getMasPoderoso(lista2.get(Region.ZAUN)));
         mapa.put(Region.AGUAS_ESTANCADAS, getMasPoderoso(lista2.get(Region.AGUAS_ESTANCADAS)));
         mapa.put(Region.DESCONOCIDA, getMasPoderoso(lista2.get(Region.DESCONOCIDA)));
 

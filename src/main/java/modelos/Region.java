@@ -8,7 +8,7 @@ public enum Region{
     TARGON,
     FREIJORD,
     PILTOVER,
-    ZAUM,
+    ZAUN,
     BANDLE,
     AGUAS_ESTANCADAS,
     DESCONOCIDA;

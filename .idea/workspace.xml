@@ -4,10 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e230582f-9c86-44f2-b42d-6e8e582fb529" name="Changes" comment="Modelos acabados">
-      <change afterPath="$PROJECT_DIR$/src/main/java/utilidades/IUtilidadesPartida.java" afterDir="false" />
+    <list default="true" id="e230582f-9c86-44f2-b42d-6e8e582fb529" name="Changes" comment="trabajo acabado (sin revisión)">
+      <change afterPath="$PROJECT_DIR$/src/test/java/PruebaMetodos.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/modelos/Region.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/modelos/Region.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/modelos/TipoHabilidad.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/modelos/TipoHabilidad.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/utilidades/UtilidadesFichero.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utilidades/UtilidadesFichero.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/utilidades/UtilidadesHabilidad.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utilidades/UtilidadesHabilidad.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/utilidades/UtilidadesPartida.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utilidades/UtilidadesPartida.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/utilidades/UtilidadesPersonaje.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utilidades/UtilidadesPersonaje.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,8 +22,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -35,6 +40,9 @@
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectId" id="25TYEdu5qVtAQCglCNcePoQBmP6" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -55,6 +63,67 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
   </component>
+  <component name="RunManager" selected="JUnit.PruebaMetodos.testLeerPersonajesFicheroConHabilidad">
+    <configuration name="PruebaMetodos.testLeerItemsFichero" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="proyectoLeagueOfLegends" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="PruebaMetodos" />
+      <option name="METHOD_NAME" value="testLeerItemsFichero" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PruebaMetodos.testLeerPersonajesFichero" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="proyectoLeagueOfLegends" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="PruebaMetodos" />
+      <option name="METHOD_NAME" value="testLeerPersonajesFichero" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PruebaMetodos.testLeerPersonajesFicheroConHabilidad" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="proyectoLeagueOfLegends" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="PruebaMetodos" />
+      <option name="METHOD_NAME" value="testLeerPersonajesFicheroConHabilidad" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PruebaMetodos.testMasPoderoso" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="proyectoLeagueOfLegends" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="PruebaMetodos" />
+      <option name="METHOD_NAME" value="testMasPoderoso" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PruebaMetodos.testPersonajesMasPoderosoPorRegion" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="proyectoLeagueOfLegends" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="PruebaMetodos" />
+      <option name="METHOD_NAME" value="testPersonajesMasPoderosoPorRegion" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.PruebaMetodos.testLeerPersonajesFicheroConHabilidad" />
+        <item itemvalue="JUnit.PruebaMetodos.testLeerPersonajesFichero" />
+        <item itemvalue="JUnit.PruebaMetodos.testLeerItemsFichero" />
+        <item itemvalue="JUnit.PruebaMetodos.testPersonajesMasPoderosoPorRegion" />
+        <item itemvalue="JUnit.PruebaMetodos.testMasPoderoso" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -73,7 +142,11 @@
       <workItem from="1646417609423" duration="2019000" />
       <workItem from="1646755007204" duration="262000" />
       <workItem from="1646938097329" duration="2895000" />
-      <workItem from="1647175439324" duration="22116000" />
+      <workItem from="1647175439324" duration="22729000" />
+      <workItem from="1647370283996" duration="1247000" />
+      <workItem from="1647541277176" duration="4536000" />
+      <workItem from="1647614498625" duration="6357000" />
+      <workItem from="1647621088342" duration="1183000" />
     </task>
     <task id="LOCAL-00001" summary="Primeros metodos realizados">
       <created>1645559230255</created>
@@ -131,7 +204,14 @@
       <option name="project" value="LOCAL" />
       <updated>1647194668660</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="trabajo acabado (sin revisión)">
+      <created>1647200846217</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1647200846217</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -156,6 +236,32 @@
     <MESSAGE value="Primer metodo v6 acabado" />
     <MESSAGE value="V6 Acabado" />
     <MESSAGE value="Modelos acabados" />
-    <option name="LAST_COMMIT_MESSAGE" value="Modelos acabados" />
+    <MESSAGE value="trabajo acabado (sin revisión)" />
+    <option name="LAST_COMMIT_MESSAGE" value="trabajo acabado (sin revisión)" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/utilidades/UtilidadesPersonaje.java</url>
+          <line>44</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/utilidades/UtilidadesPersonaje.java</url>
+          <line>132</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/utilidades/UtilidadesPersonaje.java</url>
+          <line>150</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.NullPointerException" package="java.lang" />
+          <option name="timeStamp" value="5" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
